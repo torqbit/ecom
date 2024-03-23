@@ -1,9 +1,9 @@
 import { Menu } from '@headlessui/react';
 import { FC } from 'react';
 import Link from 'next/link';
-import Feature from '@/components/buttons/Menu/Feature';
+import Feature from '@/components/Menu/Feature';
 
-const Men: FC<{ menu: string }> = ({ menu }) => {
+const Women: FC<{ menu: string }> = ({ menu }) => {
   const Trending = [
     {
       name: 'New Release',
@@ -162,53 +162,29 @@ const Men: FC<{ menu: string }> = ({ menu }) => {
       name: 'Gymshark X Anna',
       href: '/',
     },
-    {
-      name: 'React',
-      href: '/',
-    },
-    {
-      name: 'Arrival',
-      href: '/',
-    },
-    {
-      name: '315 collection',
-      href: '/',
-    },
-    {
-      name: 'Critical',
-      href: '/',
-    },
   ];
 
   const Gym = [
     {
-      name: 'Conditioning ',
+      name: 'Conditioning Essentials',
       href: '/',
     },
     {
-      name: 'Lifting ',
+      name: 'Lifting Essentials',
       href: '/',
     },
     {
       name: 'Reset Day',
       href: '/',
     },
-    {
-      name: 'Running',
-      href: '/',
-    },
-    {
-      name: 'Pump Cover',
-      href: '/',
-    },
   ];
   const WomenSale = [
     {
-      name: 'Sweat',
+      name: 'All Womens Sale',
       href: '/',
     },
     {
-      name: 'Sweat',
+      name: '50% Off And Above',
       href: '/',
     },
   ];
@@ -216,18 +192,18 @@ const Men: FC<{ menu: string }> = ({ menu }) => {
   return (
     <>
       <section
-        className={`absolute left-20 z-20 w-[100%]  rounded-lg  bg-white px-6 py-6  `}
+        className={`absolute left-20 z-20  w-[100%]  rounded-lg bg-white px-6 py-6  `}
       >
         <div className='grid h-[500px] grid-flow-col gap-20'>
           <div>
-            <h5 className=' font-bold uppercase'>Product</h5>
-            {Product.map((item, i) => {
+            <h5 className='font-bold uppercase'>Trending</h5>
+            {Trending.map((item, i) => {
               return (
                 <Menu.Item key={i}>
                   <Link href={item.href}>
                     <div
-                      className='flex items-baseline	
-  text-[#666] hover:text-[#000]  '
+                      className='flex items-baseline justify-between  text-[#666]
+ hover:text-[#000]'
                     >
                       <h1 className='text-sm	font-semibold	 leading-6  '>
                         {item.name}
@@ -237,10 +213,8 @@ const Men: FC<{ menu: string }> = ({ menu }) => {
                 </Menu.Item>
               );
             })}
-          </div>
-          <div>
-            <div>
-              <h5 className='font-bold uppercase'>Men's sales</h5>
+            <div className='mt-10'>
+              <h5 className='font-bold uppercase'>Women's sales</h5>
               {WomenSale.map((item, i) => {
                 return (
                   <Menu.Item key={i}>
@@ -258,14 +232,17 @@ const Men: FC<{ menu: string }> = ({ menu }) => {
                 );
               })}
             </div>
-            <h5 className='mt-4 font-bold uppercase'>Trending</h5>
-            {Trending.map((item, i) => {
+          </div>
+
+          <div>
+            <h5 className='font-bold uppercase'>ProductS</h5>
+            {Product.map((item, i) => {
               return (
                 <Menu.Item key={i}>
                   <Link href={item.href}>
                     <div
-                      className='flex items-baseline justify-between  text-[#666]
- hover:text-[#000]'
+                      className='flex items-baseline	
+  text-[#666] hover:text-[#000]  '
                     >
                       <h1 className='text-sm	font-semibold	 leading-6  '>
                         {item.name}
@@ -278,7 +255,7 @@ const Men: FC<{ menu: string }> = ({ menu }) => {
           </div>
 
           <div>
-            <h5 className='font-bold uppercase'>Collection</h5>
+            <h5 className='font-bold uppercase'>Collections</h5>
             {Collection.map((item, i) => {
               return (
                 <Menu.Item key={i}>
@@ -298,7 +275,7 @@ const Men: FC<{ menu: string }> = ({ menu }) => {
           </div>
 
           <div>
-            <h5 className='font-bold uppercase'>Back to Gym Essential</h5>
+            <h5 className='font-bold uppercase'>Back to Gym Essentials</h5>
             {Gym.map((item, i) => {
               return (
                 <Menu.Item key={i}>
@@ -324,4 +301,4 @@ const Men: FC<{ menu: string }> = ({ menu }) => {
     </>
   );
 };
-export default Men;
+export default Women;

@@ -1,9 +1,9 @@
 import { FC, useState } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import Link from 'next/link';
-import Women from '@/components/buttons/Menu/Women';
-import Men from '@/components/buttons/Menu/Men';
-import Accessories from '@/components/buttons/Menu/Accessories';
+import Accessories from '@/components/Menu/Accessories';
+import Men from '@/components/Menu/Men';
+import Women from '@/components/Menu/Women';
 
 const Header: FC<{
   menuActive: { active: boolean; menu: string };
