@@ -1,8 +1,8 @@
 const BestSeller = () => {
   const Item = [
     {
-      image: '/images/dress1-remove.png',
-      image2: '/images/dress2-remove.png',
+      image: '/images/trouser.png',
+      image2: '/images/trouserBack.png',
       name: 'EveryDay Seamless Leggings',
       detail: 'Body Fit',
       fitting: 'Medium Support',
@@ -11,8 +11,8 @@ const BestSeller = () => {
       rating: '3.5',
     },
     {
-      image: '/images/dress1-remove.png',
-      image2: '/images/dress2-remove.png',
+      image: '/images/trouser.png',
+      image2: '/images/trouserBack.png',
       name: 'EveryDay Seamless Leggings',
       detail: 'Body Fit',
       fitting: 'Slim Fit',
@@ -21,8 +21,8 @@ const BestSeller = () => {
       rating: '4.5',
     },
     {
-      image: '/images/dress1-remove.png',
-      image2: '/images/dress2-remove.png',
+      image: '/images/trouser.png',
+      image2: '/images/trouserBack.png',
       name: 'EveryDay Seamless Leggings',
       detail: 'Body Fit',
       color: 'black',
@@ -31,8 +31,8 @@ const BestSeller = () => {
       rating: '2.5',
     },
     {
-      image: '/images/dress1-remove.png',
-      image2: '/images/dress2-remove.png',
+      image: '/images/trouser.png',
+      image2: '/images/trouserBack.png',
       name: 'EveryDay Seamless Leggings',
       detail: 'Body Fit',
       fitting: 'Slim Fit',
@@ -52,19 +52,19 @@ const BestSeller = () => {
   ];
 
   return (
-    <section className='p-16 '>
+    <section className='p-16'>
       <div className='mt-8 flex items-baseline'>
         <h2 className='uppercase'>Best Seller</h2>
         <h4 className='ml-6 cursor-pointer underline'>View All</h4>
       </div>
-      <div className='mt-6  grid h-[400px] grid-cols-4 gap-2 '>
+      <div className='mt-6   grid h-[400px] grid-cols-4 gap-2 '>
         {Item.map((item, i) => {
           return (
             <div
               key={i}
               className='group  cursor-pointer bg-white text-[#666] '
             >
-              <div className='  absolute ml-[300px] mt-2 rounded-full  bg-white p-1 text-right	'>
+              <div className='  absolute ml-[250px] mt-2 rounded-full  bg-white p-1 text-right	'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
