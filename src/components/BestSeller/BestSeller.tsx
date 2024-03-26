@@ -2,6 +2,7 @@ const BestSeller = () => {
   const Item = [
     {
       image: '/images/dress1.webp',
+      image2: '/images/dress2.webp',
       name: 'EveryDay Seamless Leggings',
       detail: 'Body Fit',
       color: 'black',
@@ -10,6 +11,7 @@ const BestSeller = () => {
     },
     {
       image: '/images/dress1.webp',
+      image2: '/images/dress2.webp',
       name: 'EveryDay Seamless Leggings',
       detail: 'Body Fit',
       color: 'black',
@@ -18,6 +20,7 @@ const BestSeller = () => {
     },
     {
       image: '/images/dress1.webp',
+      image2: '/images/dress2.webp',
       name: 'EveryDay Seamless Leggings',
       detail: 'Body Fit',
       color: 'black',
@@ -26,6 +29,7 @@ const BestSeller = () => {
     },
     {
       image: '/images/dress1.webp',
+      image2: '/images/dress2.webp',
       name: 'EveryDay Seamless Leggings',
       detail: 'Body Fit',
       color: 'black',
@@ -72,14 +76,19 @@ const BestSeller = () => {
                   />
                 </svg>
               </div>
-              <div className='  flex h-[400px] justify-center bg-[#e7e7e7]  '>
+              <div className='  flex h-[400px] justify-center bg-[#eee]  '>
                 <img
-                  className='	 h-[400px]  w-[200px] bg-transparent bg-opacity-10  object-cover '
+                  className='h-[400px]  w-[200px]  object-cover    group-hover:hidden '
                   src={item.image}
                   alt='img'
                 />
+                <img
+                  className='	hidden h-[400px] w-[200px]  object-cover     group-hover:block '
+                  src={item.image2}
+                  alt='img'
+                />
               </div>
-              <div className=' relative hidden grid-cols-5 gap-1 bg-[#eee] p-8 uppercase transition-all group-hover:mt-[-148px] group-hover:grid group-hover:-translate-y-1'>
+              <div className=' relative hidden grid-cols-5 gap-1 bg-[#eee] p-8 uppercase transition-all group-hover:mt-[-148px] group-hover:grid '>
                 {Size.map((item, i) => {
                   return (
                     <div
