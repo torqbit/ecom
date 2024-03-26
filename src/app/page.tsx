@@ -10,6 +10,8 @@ import UnstyledLink from '@/components/links/UnstyledLink';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faTrash } from '@fortawesome/free-solid-svg-icons';
+import Header from '@/components/Header/Header';
+import { useState } from 'react';
 
 /**
  * SVGR Support
@@ -26,6 +28,13 @@ import HeroSection from '@/components/HeroSection/HeroSection';
 // to customize the default configuration.
 
 export default function HomePage() {
+  const [menuActive, setMenuActive] = useState({
+    active: false,
+    menu: '',
+  });
+  const onMenuActive = (value: boolean, name: string) => {
+    setMenuActive({ active: value, menu: name });
+  };
   return (
     <main>
       <Head>
@@ -33,6 +42,8 @@ export default function HomePage() {
       </Head>
       <section>
         <HeroSection />
+        <Header menuActive={menuActive} onMenuActive={onMenuActive} />
+
       </section>
     </main>
   );
