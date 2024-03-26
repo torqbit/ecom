@@ -23,7 +23,6 @@ import { useState } from 'react';
 import Logo from '~/svg/Logo.svg';
 import BestSeller from '@/components/BestSeller/BestSeller';
 
-
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
@@ -42,9 +41,8 @@ export default function HomePage() {
         <title>Hi</title>
       </Head>
       <section>
-        <BestSeller />
         <Header menuActive={menuActive} onMenuActive={onMenuActive} />
-
+        <BestSeller />
       </section>
     </main>
   );

@@ -1,37 +1,41 @@
 const BestSeller = () => {
   const Item = [
     {
-      image: '/images/dress1.webp',
-      image2: '/images/dress2.webp',
+      image: '/images/dress1-remove.png',
+      image2: '/images/dress2-remove.png',
       name: 'EveryDay Seamless Leggings',
       detail: 'Body Fit',
+      fitting: 'Medium Support',
       color: 'black',
       price: '$38',
       rating: '3.5',
     },
     {
-      image: '/images/dress1.webp',
-      image2: '/images/dress2.webp',
+      image: '/images/dress1-remove.png',
+      image2: '/images/dress2-remove.png',
       name: 'EveryDay Seamless Leggings',
       detail: 'Body Fit',
+      fitting: 'Slim Fit',
       color: 'black',
       price: '$38',
       rating: '4.5',
     },
     {
-      image: '/images/dress1.webp',
-      image2: '/images/dress2.webp',
+      image: '/images/dress1-remove.png',
+      image2: '/images/dress2-remove.png',
       name: 'EveryDay Seamless Leggings',
       detail: 'Body Fit',
       color: 'black',
       price: '$38',
+      fitting: 'Slim Fit',
       rating: '2.5',
     },
     {
-      image: '/images/dress1.webp',
-      image2: '/images/dress2.webp',
+      image: '/images/dress1-remove.png',
+      image2: '/images/dress2-remove.png',
       name: 'EveryDay Seamless Leggings',
       detail: 'Body Fit',
+      fitting: 'Slim Fit',
       color: 'black',
       price: '$38',
       rating: '5.0',
@@ -48,8 +52,8 @@ const BestSeller = () => {
   ];
 
   return (
-    <section className='p-16'>
-      <div className='flex items-baseline'>
+    <section className='p-16 '>
+      <div className='mt-8 flex items-baseline'>
         <h2 className='uppercase'>Best Seller</h2>
         <h4 className='ml-6 cursor-pointer underline'>View All</h4>
       </div>
@@ -88,7 +92,7 @@ const BestSeller = () => {
                   alt='img'
                 />
               </div>
-              <div className=' relative hidden grid-cols-5 gap-1 bg-[#eee] p-8 uppercase transition-all group-hover:mt-[-148px] group-hover:grid '>
+              <div className=' relative hidden grid-cols-5 gap-1 bg-[#e7e7e7] p-8 uppercase transition-all group-hover:mt-[-148px] group-hover:grid '>
                 {Size.map((item, i) => {
                   return (
                     <div
@@ -100,8 +104,8 @@ const BestSeller = () => {
                   );
                 })}
               </div>
-              <div className=''>
-                <div className='justify-betwee flex'>
+              <div className='mt-1 text-sm capitalize'>
+                <div className='flex justify-between'>
                   <p className=' font-medium'> {item.name}</p>
                   <span className=' flex items-center font-medium text-black'>
                     <svg
@@ -123,6 +127,7 @@ const BestSeller = () => {
                 </div>
                 <p>{item.detail}</p>
                 <p>{item.color}</p>
+                <p>{item.fitting}</p>
                 <h4>US{item.price}</h4>
               </div>
             </div>
