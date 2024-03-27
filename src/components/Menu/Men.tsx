@@ -216,32 +216,13 @@ const Men: FC<{ menu: string }> = ({ menu }) => {
   return (
     <>
       <section
-        className={`absolute left-20 z-20 w-[100%]  rounded-lg  bg-white px-6 py-6  `}
+        className={`absolute  right-[-70px] z-20  w-[100%]  rounded-lg bg-white px-6 py-6  `}
       >
-        <div className='grid h-[500px] grid-flow-col gap-20'>
-          <div>
-            <h5 className=' font-bold uppercase'>Product</h5>
-            {Product.map((item, i) => {
-              return (
-                <Menu.Item key={i}>
-                  <Link href={item.href}>
-                    <div
-                      className='flex items-baseline	
-  text-[#666] hover:text-[#000]  '
-                    >
-                      <h1 className='text-sm	font-semibold	 leading-6  '>
-                        {item.name}
-                      </h1>
-                    </div>
-                  </Link>
-                </Menu.Item>
-              );
-            })}
-          </div>
-          <div>
+        <div className='ml-20 '>
+          <div className='grid h-[500px] grid-flow-col gap-20'>
             <div>
-              <h5 className='font-bold uppercase'>Men's sales</h5>
-              {WomenSale.map((item, i) => {
+              <h5 className=' font-bold uppercase'>Product</h5>
+              {Product.map((item, i) => {
                 return (
                   <Menu.Item key={i}>
                     <Link href={item.href}>
@@ -249,7 +230,7 @@ const Men: FC<{ menu: string }> = ({ menu }) => {
                         className='flex items-baseline	
   text-[#666] hover:text-[#000]  '
                       >
-                        <h1 className='text-sm	font-semibold	 leading-6    '>
+                        <h1 className='text-sm	font-semibold	 leading-6  '>
                           {item.name}
                         </h1>
                       </div>
@@ -258,66 +239,87 @@ const Men: FC<{ menu: string }> = ({ menu }) => {
                 );
               })}
             </div>
-            <h5 className='mt-4 font-bold uppercase'>Trending</h5>
-            {Trending.map((item, i) => {
-              return (
-                <Menu.Item key={i}>
-                  <Link href={item.href}>
-                    <div
-                      className='flex items-baseline justify-between  text-[#666]
+            <div>
+              <div>
+                <h5 className='font-bold uppercase'>Men's sales</h5>
+                {WomenSale.map((item, i) => {
+                  return (
+                    <Menu.Item key={i}>
+                      <Link href={item.href}>
+                        <div
+                          className='flex items-baseline	
+  text-[#666] hover:text-[#000]  '
+                        >
+                          <h1 className='text-sm	font-semibold	 leading-6    '>
+                            {item.name}
+                          </h1>
+                        </div>
+                      </Link>
+                    </Menu.Item>
+                  );
+                })}
+              </div>
+              <h5 className='mt-4 font-bold uppercase'>Trending</h5>
+              {Trending.map((item, i) => {
+                return (
+                  <Menu.Item key={i}>
+                    <Link href={item.href}>
+                      <div
+                        className='flex items-baseline justify-between  text-[#666]
  hover:text-[#000]'
-                    >
-                      <h1 className='text-sm	font-semibold	 leading-6  '>
-                        {item.name}
-                      </h1>
-                    </div>
-                  </Link>
-                </Menu.Item>
-              );
-            })}
-          </div>
+                      >
+                        <h1 className='text-sm	font-semibold	 leading-6  '>
+                          {item.name}
+                        </h1>
+                      </div>
+                    </Link>
+                  </Menu.Item>
+                );
+              })}
+            </div>
 
-          <div>
-            <h5 className='font-bold uppercase'>Collection</h5>
-            {Collection.map((item, i) => {
-              return (
-                <Menu.Item key={i}>
-                  <Link href={item.href}>
-                    <div
-                      className='flex items-baseline	
+            <div>
+              <h5 className='font-bold uppercase'>Collection</h5>
+              {Collection.map((item, i) => {
+                return (
+                  <Menu.Item key={i}>
+                    <Link href={item.href}>
+                      <div
+                        className='flex items-baseline	
   text-[#666] hover:text-[#000]  '
-                    >
-                      <h1 className='text-sm	font-semibold	 leading-6  '>
-                        {item.name}
-                      </h1>
-                    </div>
-                  </Link>
-                </Menu.Item>
-              );
-            })}
-          </div>
+                      >
+                        <h1 className='text-sm	font-semibold	 leading-6  '>
+                          {item.name}
+                        </h1>
+                      </div>
+                    </Link>
+                  </Menu.Item>
+                );
+              })}
+            </div>
 
-          <div>
-            <h5 className='font-bold uppercase'>Back to Gym Essential</h5>
-            {Gym.map((item, i) => {
-              return (
-                <Menu.Item key={i}>
-                  <Link href={item.href}>
-                    <div
-                      className='flex items-baseline	
+            <div>
+              <h5 className='font-bold uppercase'>Back to Gym Essential</h5>
+              {Gym.map((item, i) => {
+                return (
+                  <Menu.Item key={i}>
+                    <Link href={item.href}>
+                      <div
+                        className='flex items-baseline	
   text-[#666] hover:text-[#000]  '
-                    >
-                      <h1 className='text-sm	font-semibold	 leading-6  '>
-                        {item.name}
-                      </h1>
-                    </div>
-                  </Link>
-                </Menu.Item>
-              );
-            })}
-          </div>
-          <div className='mr-10'>
-            <Feature />
+                      >
+                        <h1 className='text-sm	font-semibold	 leading-6  '>
+                          {item.name}
+                        </h1>
+                      </div>
+                    </Link>
+                  </Menu.Item>
+                );
+              })}
+            </div>
+            <div className='mr-10'>
+              <Feature />
+            </div>
           </div>
         </div>
       </section>
