@@ -3,7 +3,7 @@ const BestSeller = () => {
     {
       image: '/images/trouser.png',
       image2: '/images/trouserBack.png',
-      name: 'EveryDay Seamless Leggings',
+      name: 'EveryDay Trouser',
       detail: 'Body Fit',
       fitting: 'Medium Support',
       color: 'black',
@@ -13,7 +13,7 @@ const BestSeller = () => {
     {
       image: '/images/trouser.png',
       image2: '/images/trouserBack.png',
-      name: 'EveryDay Seamless Leggings',
+      name: 'EveryDay Trouser',
       detail: 'Body Fit',
       fitting: 'Slim Fit',
       color: 'black',
@@ -23,7 +23,7 @@ const BestSeller = () => {
     {
       image: '/images/trouser.png',
       image2: '/images/trouserBack.png',
-      name: 'EveryDay Seamless Leggings',
+      name: 'EveryDay Trouser',
       detail: 'Body Fit',
       color: 'black',
       price: '$38',
@@ -33,7 +33,7 @@ const BestSeller = () => {
     {
       image: '/images/trouser.png',
       image2: '/images/trouserBack.png',
-      name: 'EveryDay Seamless Leggings',
+      name: 'EveryDay Trouser',
       detail: 'Body Fit',
       fitting: 'Slim Fit',
       color: 'black',
